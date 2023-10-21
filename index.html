@@ -1,132 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-*{
-    box-sizing: border-box;
-}
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-    body{
-        border: 2PX solid black;
-        height: 780px ;
-        width: 1000px  ;
-        box-sizing: border-box;
-        padding-left: 25px ;
-    }
-    .rupee{
-        font-size:105px ;
-        /* border: 2px solid red; */
-    }
-.MRP{
-    font-size: 50PX;
-   
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            border: 2PX solid black;
+            /* height: 100vh; */
+            width: 90%;
+            padding-left: 25px;
+            margin: 0 auto;
+            /* font-family: 'Poppins', sans-serif; */
+
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+        }
+
+        .logo{            
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 70px;
+        }
+        .logo img{
+            width: 50%;
+        }
+        .logo p{
+            font-size: 28px;
+        }
+
+        .MRP {
+            text-align: right;
+        }
+        #model-no-label{
+            font-size: 90px;
+        }
+        label{
+            font-size: 50px;
+        }
+        p{
+            font-size: 35px;
+        }
+        input{
+            font-size: 50px;
+            padding: 5px;
+            width: 40%;
+            margin: 15px 0;
+        }
+        .picture{
+            width: 100%;
+            height: max-content;
+            padding: 5px;
+            /* border: 2px solid red;  */
+
+            display: flex;
+            justify-content: end; 
+        }
     
-    
-}
-.EMI{
-    font-size: 50PX;
-    height: 50px;
-    width: 230px;
-    border: transparent;
-    /* border: 2px solid red; */
-    
-}
-.nubmer{
-    height: 100px;
-    width: 400px;
-    font-size: 90px;
-    border: transparent;
-}
-.box{
-/* padding-left: 400px; */
-float: right;
-/* border: 2px solid red; */
-
-/* padding-bottom: 100px; */
-}
-.text{
-    height: 50px;
-    width: 500px;
-    font-size: 45px;
-    border: transparent;
-}
-.prize
-{
-    font-size: 100px;
-    /* border: 2px solid red; */
-    width: 450px;
-    font-weight: bold;
-    margin: 15px;
-}
-.pic{
-    /* padding-left: 100px; */
-    /* border: 2px solid red; */
-    float: right;
-    height: 250px;
-    width: 600px;
-}
-.MR{
-    float: left;
-}
-
- 
-/*.picture{
-    float:right;
-    
-    height: 250px;
-    width: 600px;
-    padding-bottom: 50px;
-    margin-bottom:500px ;
-
-    border: 2px solid red;
-    box-sizing: inline;
-    margin-right: 10px; ;
-    margin-bottom: 50px;
-} */
-
-</style>
+        ::placeholder {
+            font-size: 20px;
+        }
+    </style>
 
     <title>Document</title>
 </head>
+
 <body>
-    
-    <div class="box">
-    <span class="EMI">BAJA EMI ₹</span>
-    <input type="number" class="EMI" placeholder="enter EMI">
+<div class="container">
+    <div class="logo">
+        <img src="image/logo.png" alt="">
+        <p>www.ifbappliences.com</p>
+    </div>
+
+    <div class="content">
+        <label id="model-no-label" for="model-no">MODEL</label>
+        <input type="text" id="model-no" placeholder="Enter the model-no">
+        <br>
+        <div class="MRP">
+            <label for="MRP">MRP ₹</label>
+            <input type="number" id="MRP" placeholder="Enter the MRP">
+        </div>
+        <br>
+        <label for="CASHBACK">Cash-Back ₹</label>
+        <input type="number" id="CASHBACK" placeholder="Enter the CASHBACK">
+        <br>
+        <label for="BANK">Bank</label>
+        <input type="text" id="BANK" placeholder="Enter the BANK">
+        <br>
+        <label for="EMI">Fix&nbsp; EMI&nbsp; ₹&nbsp;&nbsp;</label>
+        <input type="number" id="EMI" placeholder="Enter the EMI">
+        <p>By Bajaj Finace </p>
+    </div>
+
+    <div class="picture">
+        <img src="image/card.jpg" width="500px" height="250px" class="pic">
+    </div>
+
 </div>
-    <p class="prize" >Our prize</p>
-    <span class="rupee">₹</span>
-    <input type="number" class="nubmer" placeholder="enter our prize">
-    
-
-    <br>
-    <br>
-
-    <input type="text" class="text" placeholder="for item name">
-    <br>
-    <input type="text" class="text" placeholder="for item name">
-    <br>
-    <input type="text" class="text" placeholder="for item name">
-<br>
-<br>
-<div class="MR" >
-<span class="MRP">MRP ₹</span>
-<input type="number" class="EMI" placeholder="enter MRP" >
-</div>
+    <!-- ₹
+Bajaj Finance fixed EMI-->
 
 
-<div class="picture">
-<img src="papa.jpg" width="500px" height="250px" class="pic">
-</div>
 
-<!-- <div class="picture" >
-    
-
-</div> -->
-    
 </body>
+
 </html>
