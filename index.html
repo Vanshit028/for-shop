@@ -17,9 +17,8 @@
 
         body {
             border: 2PX solid black;
-            /* height: 100vh; */
             width: 90%;
-            padding-left: 25px;
+            padding: 0 10px;
             margin: 0 auto;
             /* font-family: 'Poppins', sans-serif; */
 
@@ -57,10 +56,21 @@
         }
         input{
             font-size: 50px;
-            padding: 5px;
+            padding: 0 5px;
             width: 40%;
+            max-width: max-content;
             margin: 15px 0;
+            border: 0;
+            /* border: 2px solid red; */
+
         }
+        #model-no{
+            font-size: 90px;
+        }
+        #MRP{
+            width: 20%;
+        }           
+
         .picture{
             width: 100%;
             height: max-content;
@@ -87,7 +97,7 @@
     </div>
 
     <div class="content">
-        <label id="model-no-label" for="model-no">MODEL</label>
+        <label id="model-no-label" for="model-no">MODEL </label>
         <input type="text" id="model-no" placeholder="Enter the model-no">
         <br>
         <div class="MRP">
@@ -98,7 +108,7 @@
         <label for="CASHBACK">Cash-Back ₹</label>
         <input type="number" id="CASHBACK" placeholder="Enter the CASHBACK">
         <br>
-        <label for="BANK">Bank</label>
+        <label for="BANK">Bank </label>
         <input type="text" id="BANK" placeholder="Enter the BANK">
         <br>
         <label for="EMI">Fix&nbsp; EMI&nbsp; ₹&nbsp;&nbsp;</label>
