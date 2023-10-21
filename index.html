@@ -46,19 +46,22 @@
             text-align: right;
         }
         #model-no-label{
-            font-size: 90px;
+            font-size: 86px;
         }
         label{
-            font-size: 50px;
+            font-size: 60px;
         }
         p{
             font-size: 35px;
         }
+        /* #MODEL{
+            display: flex;
+        } */
         input{
             font-size: 50px;
             padding: 0 5px;
-            width: 40%;
-            max-width: max-content;
+            width: 60%;
+            /* min-width: max-content; */
             margin: 15px 0;
             border: 0;
             /* border: 2px solid red; */
@@ -66,7 +69,9 @@
         }
         #model-no{
             font-size: 90px;
+            width: 5%;        
         }
+
         #MRP{
             width: 20%;
         }           
@@ -97,22 +102,24 @@
     </div>
 
     <div class="content">
-        <label id="model-no-label" for="model-no">MODEL </label>
-        <input type="text" id="model-no" placeholder="Enter the model-no">
-        <br>
+<div id="MODEL">
+<label id="model-no-label" for="model-no">MODEL </label>
+    <input type="text" id="model-no" placeholder="Enter the model-no">
+</div>
+        
         <div class="MRP">
-            <label for="MRP">MRP ₹</label>
-            <input type="number" id="MRP" placeholder="Enter the MRP">
+            <label for="MRP">MRP &#8377;</label>
+            <input type="text" id="MRP" placeholder="Enter the MRP">
         </div>
-        <br>
-        <label for="CASHBACK">Cash-Back ₹</label>
-        <input type="number" id="CASHBACK" placeholder="Enter the CASHBACK">
+        
+        <label for="CASHBACK">Cash-Back &#8377;</label>
+        <input type="text" id="CASHBACK" placeholder="Enter the CASHBACK">
         <br>
         <label for="BANK">Bank </label>
         <input type="text" id="BANK" placeholder="Enter the BANK">
         <br>
-        <label for="EMI">Fix&nbsp; EMI&nbsp; ₹&nbsp;&nbsp;</label>
-        <input type="number" id="EMI" placeholder="Enter the EMI">
+        <label for="EMI">Fix&nbsp; EMI&nbsp; &#8377;&nbsp;&nbsp;</label>
+        <input type="text" id="EMI" placeholder="Enter the EMI">
         <p>By Bajaj Finace </p>
     </div>
 
